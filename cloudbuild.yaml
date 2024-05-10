@@ -1,4 +1,4 @@
-# This is script for https://cloud.google.com/cloud-build/
+# Ini adalah skrip untuk https://cloud.google.com/cloud-build/
 steps:
 # Install
 - name: 'gcr.io/cloud-builders/npm'
@@ -6,5 +6,6 @@ steps:
 # Build
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
+# Deploy
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy']  
+  args: ['run', 'deploy', '--image', 'gcr.io/prak-tcc-e2/students-crud-fe']
