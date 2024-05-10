@@ -1,2 +1,2 @@
 runtime: nodejs18
-service: students-crud-fe
+service: default
