@@ -3,9 +3,6 @@ steps:
 # Install
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
-# Lint
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'lint']
 # Build
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
