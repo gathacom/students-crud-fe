@@ -9,8 +9,5 @@ steps:
 # Deploy
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['run',
-        'deploy',
-        'students-crud-fe',
-        '--image',
-        '--allow-unauthenticated',]
+        'deploy',]
   # args: ['run', 'deploy', '--image', 'gcr.io/prak-tcc-e2/students-crud-fe']
