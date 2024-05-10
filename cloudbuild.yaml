@@ -8,5 +8,5 @@ steps:
   args: ['run', 'build']
 # Deploy
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', '--image', 'gcr.io/prak-tcc-e2/students-crud-fe']
+  args: ['run', 'deploy','us-central1' ,'--image', 'gcr.io/prak-tcc-e2/students-crud-fe']
   # args: ['run', 'deploy', '--image', 'gcr.io/prak-tcc-e2/students-crud-fe']
